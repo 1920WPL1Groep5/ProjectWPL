@@ -10,14 +10,11 @@
         <property name="serverTimezone" value="UTC" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="planten@localhost" uuid="fe994542-8a95-4253-bbf0-09b2ab30a509">
+    <data-source source="LOCAL" name="jdbc:sqlserver://localhost/LAPTOP-FF3KKSKR\\VIVES;databaseName=plantjes" uuid="fe994542-8a95-4253-bbf0-09b2ab30a509">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://localhost\VIVES;database=planten</jdbc-url>
-      <driver-properties>
-        <property name="applicationName" value="DataGrip" />
-      </driver-properties>
+      <jdbc-url>jdbc:sqlserver://localhost/LAPTOP-FF3KKSKR\\VIVES;databaseName=plantjes</jdbc-url>
     </data-source>
   </component>
 </project>

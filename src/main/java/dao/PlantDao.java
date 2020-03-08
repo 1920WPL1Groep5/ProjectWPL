@@ -74,26 +74,32 @@ public class PlantDao {
         }
         return planten;
     }
-    public List<Plant> GetStudentByType(String type) throws SQLException {
-        List<Plant> studentList = new ArrayList<>();
+    public List<Plant> GetPlantByType(String type) throws SQLException {
+        List<Plant> PlantList = new ArrayList<>();
 
-        stmtSelectPlantByType.setString(1, "%" + naamStudent + "%");
-        ResultSet rs = stmtSelectByName.executeQuery();
+        stmtSelectPlantByType.setString(1, "%" + type + "%");
+        ResultSet rs = stmtSelectPlantByType.executeQuery();
 
         try {
             while (rs.next()) {
-                Student student =
-                        new Student(rs.getInt("idStudent"),
-                                rs.getString("Naam"),
-                                rs.getDate("GeboorteDatum"));
-                studentList.add(student);
+                Plant planten =
+                        new Plant(
+                                rs.getInt("plant_id"),
+                                rs.getString("type"),
+                                rs.getString("familie"),
+                                rs.getString("geslacht"),
+                                rs.getString("soort"),
+                                rs.getString("variatie"),
+                                rs.getInt("plantdichtheid_min"),
+                                rs.getInt("plantdichtheid_max"),
+                                rs.getString("fgsv")
+                        );
+                PlantList.add(planten);
             }
         } catch (SQLException ex) {
-            Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PlantDao.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        return studentList;
+        return PlantList;
     }
-
-
 }
