@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPlantenProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPlantenProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/MainDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/MainGeneric.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/dao/Plant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/dao/PlantDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/dao/PlantDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/control/GUI_Zoek.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/GUI_Zoek.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PlantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PlantDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/MainGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/MainGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +34,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="planten@LAPTOP-UGQ2D5AD" type="feb32156:DbDataSourceImpl" />
         <item name="planten: database" type="ccb7ac2a:MsImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="planten@LAPTOP-UGQ2D5AD" type="feb32156:DbDataSourceImpl" />
-        <item name="planten: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="planten@LAPTOP-UGQ2D5AD" type="feb32156:DbDataSourceImpl" />
-        <item name="planten: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -343,22 +321,22 @@
     <state x="474" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583667880070" />
     <state x="624" y="312" key="Github.ShareDialog" timestamp="1583317546354" />
     <state x="624" y="312" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1583317546354" />
-    <state width="1479" height="171" key="GridCell.Tab.0.bottom" timestamp="1583704707827">
+    <state width="1478" height="189" key="GridCell.Tab.0.bottom" timestamp="1583740222701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1479" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583704707827" />
-    <state width="1479" height="171" key="GridCell.Tab.0.center" timestamp="1583704707826">
+    <state width="1478" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583740222701" />
+    <state width="1478" height="189" key="GridCell.Tab.0.center" timestamp="1583740222701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1479" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583704707826" />
-    <state width="1479" height="171" key="GridCell.Tab.0.left" timestamp="1583704707826">
+    <state width="1478" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583740222701" />
+    <state width="1478" height="189" key="GridCell.Tab.0.left" timestamp="1583740222701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1479" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583704707826" />
-    <state width="1479" height="171" key="GridCell.Tab.0.right" timestamp="1583704707827">
+    <state width="1478" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583740222701" />
+    <state width="1478" height="189" key="GridCell.Tab.0.right" timestamp="1583740222701">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1479" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583704707827" />
+    <state width="1478" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583740222701" />
     <state x="171" y="78" width="1257" height="707" key="SettingsEditor" timestamp="1583667683085">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

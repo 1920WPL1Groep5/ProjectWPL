@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-module $MODULE_NAME$ {
-=======
 module JavaPlantenProject {
     requires javafx.fxml;
     requires javafx.controls;
@@ -8,5 +5,4 @@ module JavaPlantenProject {
     requires java.sql;
 
     opens main.java.control;
->>>>>>> Stashed changes
 }
