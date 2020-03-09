@@ -5,10 +5,7 @@ b)
 Resources > config.properties > wijzig naam LAPTOP naar de jouwe
 c)
 Database venster > rechterklik connectie > properties > tekstvak host : aanpassen naar jouw LAPTOP
-d)
-Project Structure > Modules > Dependecies :
-==> zorg dat locale JavaFX library in de lijst staat en verwijder verwijzingen naar andermans libraries
-e)
+
 Jasper: LAPTOP-UGQ2D5AD
 Kristina:
 Matthias:
