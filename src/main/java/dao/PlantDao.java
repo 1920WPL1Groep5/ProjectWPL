@@ -16,17 +16,21 @@ public class PlantDao {
             "SELECT * FROM student WHERE plant_id = ?";
     private static final String GETPLANTBYTYPE =
             "SELECT * FROM plant WHERE type LIKE ?";
-
+    // getPlantByFamilie : Jasper
+    private static final String GETPLANTBYFAMILIE =
+            "SELECT * FROM plant WHERE familie LIKE ?";
 
     private Connection dbConnection;
 
     private PreparedStatement stmtSelectPlantById;
-    private PreparedStatement stmtSelectPlantByType ;
+    private PreparedStatement stmtSelectPlantByType;
+    private PreparedStatement stmtSelectPlantByFamilie;
 
     public PlantDao(Connection dbConnection) throws SQLException {   // PlantDao is niet actief ?
         this.dbConnection = dbConnection;
         stmtSelectPlantById = dbConnection.prepareStatement(GETPLANTBYID);
         stmtSelectPlantByType = dbConnection.prepareStatement(GETPLANTBYTYPE);
+        stmtSelectPlantByFamilie = dbConnection.prepareStatement(GETPLANTBYFAMILIE);
     }
 
     public List<Plant> getAllPlanten() {
@@ -55,7 +59,7 @@ public class PlantDao {
         return plantList;
     }
 
-    public Plant GetPlantById(Integer plant_id) throws SQLException {
+    public Plant getPlantById(Integer plant_id) throws SQLException {
         Plant planten = null;
         stmtSelectPlantById.setInt(1, plant_id);
         ResultSet rs = stmtSelectPlantById.executeQuery();
@@ -74,26 +78,57 @@ public class PlantDao {
         }
         return planten;
     }
-    public List<Plant> GetStudentByType(String type) throws SQLException {
-        List<Plant> studentList = new ArrayList<>();
 
-        stmtSelectPlantByType.setString(1, "%" + naamStudent + "%");
-        ResultSet rs = stmtSelectByName.executeQuery();
+    public List<Plant> getPlantByType(String type) throws SQLException {
+        List<Plant> PlantList = new ArrayList<>();
+
+        stmtSelectPlantByType.setString(1, "%" + type + "%");
+        ResultSet rs = stmtSelectPlantByType.executeQuery();
 
         try {
             while (rs.next()) {
-                Student student =
-                        new Student(rs.getInt("idStudent"),
-                                rs.getString("Naam"),
-                                rs.getDate("GeboorteDatum"));
-                studentList.add(student);
+                Plant planten =
+                        new Plant(
+                                rs.getInt("plant_id"),
+                                rs.getString("type"),
+                                rs.getString("familie"),
+                                rs.getString("geslacht"),
+                                rs.getString("soort"),
+                                rs.getString("variatie"),
+                                rs.getInt("plantdichtheid_min"),
+                                rs.getInt("plantdichtheid_max"),
+                                rs.getString("fgsv")
+                        );
+                PlantList.add(planten);
             }
         } catch (SQLException ex) {
-            Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PlantDao.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-        return studentList;
+        return PlantList;
     }
+    // getPlantByFamily : Jasper
+    public List<Plant> getPlantByFamilie(String type) throws SQLException {
+        List<Plant> PlantList = new ArrayList<>();
 
+        stmtSelectPlantByFamilie.setString(1, "%" + type + "%");
+        ResultSet rs = stmtSelectPlantByFamilie.executeQuery();
+
+            while (rs.next()) {
+                Plant planten =
+                        new Plant(
+                                rs.getInt("plant_id"),
+                                rs.getString("type"),
+                                rs.getString("familie"),
+                                rs.getString("geslacht"),
+                                rs.getString("soort"),
+                                rs.getString("variatie"),
+                                rs.getInt("plantdichtheid_min"),
+                                rs.getInt("plantdichtheid_max"),
+                                rs.getString("fgsv")
+                        );
+                PlantList.add(planten);
+            }
+        return PlantList;
+    }
 
 }

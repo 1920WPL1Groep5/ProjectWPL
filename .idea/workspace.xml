@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/UitlegDBconnectieAanpassen" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/resources/UitlegDBconnectieAanpassen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/control/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/control/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/dao/PlantDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/java/dao/PlantDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PlantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PlantDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UitlegDBconnectieAanpassen" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UitlegDBconnectieAanpassen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +37,12 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="planten@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="planten@LAPTOP-UGQ2D5AD" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="planten@LAPTOP-UGQ2D5AD" type="feb32156:DbDataSourceImpl" />
+        <item name="planten: database" type="ccb7ac2a:MsImplModel$Database" />
       </path>
     </expand>
     <select />
@@ -74,6 +92,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -115,19 +134,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/control" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.29411766" />
+    <property name="project.structure.side.proportion" value="0.2303665" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jasper\GitRepos\ProjectWPL\src\main\java\control" />
       <recent name="C:\Users\Jasper\IdeaProjects\WPLplantenproject" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainDao">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -145,6 +165,20 @@
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.control.Main" />
+      <module name="JavaPlantenProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.control.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
@@ -168,7 +202,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.*" />
+          <option name="PATTERN" value="main.java.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,12 +211,12 @@
       </method>
     </configuration>
     <configuration name="MainGeneric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.MainGeneric" />
+      <option name="MAIN_CLASS_NAME" value="main.java.utils.MainGeneric" />
       <module name="JavaPlantenProject" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.*" />
+          <option name="PATTERN" value="main.java.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -229,6 +263,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.MainDao" />
         <item itemvalue="Application.MainGeneric" />
       </list>
@@ -275,25 +310,70 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="301" y="125" key="#Project_Structure" timestamp="1583668963962">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="301" y="125" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1583668963962" />
+    <state x="436" y="80" width="1047" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583744759974">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="436" y="80" width="1047" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583744759974" />
+    <state x="474" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583741939569">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="474" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583741939569" />
     <state x="556" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583317546354" />
     <state x="556" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583317546354" />
+    <state x="439" y="221" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1583668950380">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="439" y="221" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583668950380" />
+    <state x="474" y="173" key="FileChooserDialogImpl" timestamp="1583667880070">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="474" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583667880070" />
     <state x="624" y="312" key="Github.ShareDialog" timestamp="1583317546354" />
     <state x="624" y="312" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1583317546354" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1583317559278">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1478" height="129" key="GridCell.Tab.0.bottom" timestamp="1583746117534">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1478" height="129" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583746117534" />
+    <state width="1478" height="129" key="GridCell.Tab.0.center" timestamp="1583746117534">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="129" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583746117534" />
+    <state width="1478" height="129" key="GridCell.Tab.0.left" timestamp="1583746117533">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="129" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583746117533" />
+    <state width="1478" height="129" key="GridCell.Tab.0.right" timestamp="1583746117534">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="129" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583746117534" />
+    <state x="171" y="78" width="1257" height="707" key="SettingsEditor" timestamp="1583746332675">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="171" y="78" width="1257" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583746332675" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583317559278" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583317619800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583317619800" />
+    <state x="646" y="123" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1583743477683">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="646" y="123" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1583743477683" />
     <state x="659" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583317569333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="659" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583317569333" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+    <state x="209" y="40" key="new project wizard" timestamp="1583667805624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="40" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1583667805624" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583746324565">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583746324565" />
   </component>
 </project>
