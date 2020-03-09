@@ -1,2 +1,2 @@
-src/main/resources/config.properties
-.idea/libraries/
+/src/main/resources/config.properties
+/.idea/libraries

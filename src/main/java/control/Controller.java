@@ -13,6 +13,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
+import javax.swing.*;
+
 public class Controller {
     public TextField txtFamilie;
     public TextArea txtPlantenFamilie;
@@ -40,9 +42,13 @@ public class Controller {
             // plantenlijst aanmaken en vullen met gevonden planten voor gezochte familie
             List<Plant> familieleden = plantDao.getPlantByFamilie(familie);
             // van elk familielid de wetenschappelijke naam tonen in textArea
-            for (Plant familielid : familieleden)
-            {
-                txtPlantenFamilie.setText(txtPlantenFamilie.getText() + familielid.getFgsv() + "\r\n");
+            if(!familieleden.isEmpty()){
+                for (Plant familielid : familieleden)
+                {
+                    txtPlantenFamilie.setText(txtPlantenFamilie.getText() + familielid.getFgsv() + "\r\n");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null,"Geen planten voor deze familie gevonden");
             }
         } catch (SQLException e)
         {

@@ -113,7 +113,6 @@ public class PlantDao {
         stmtSelectPlantByFamilie.setString(1, "%" + type + "%");
         ResultSet rs = stmtSelectPlantByFamilie.executeQuery();
 
-        try {
             while (rs.next()) {
                 Plant planten =
                         new Plant(
@@ -129,9 +128,6 @@ public class PlantDao {
                         );
                 PlantList.add(planten);
             }
-        } catch (SQLException ex) {
-            Logger.getLogger(PlantDao.class.getName()).log(Level.SEVERE, null, ex);
-        }
         return PlantList;
     }
 
