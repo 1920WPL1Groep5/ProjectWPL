@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/control/GUI_Zoek.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/GUI_Zoek.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPlantenProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPlantenProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +34,7 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="planten@LAPTOP-UGQ2D5AD" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="planten@LAPTOP-UGQ2D5AD" type="feb32156:DbDataSourceImpl" />
-        <item name="planten: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="planten@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -125,8 +126,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/control" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/sqljdbc_7.4/enu/mssql-jdbc-7.4.1.jre11.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2303665" />
     <property name="recentsLimit" value="5" />
@@ -274,6 +275,8 @@
       <workItem from="1582108413768" duration="1687000" />
       <workItem from="1582115854378" duration="5280000" />
       <workItem from="1583317535084" duration="24000" />
+      <workItem from="1583740901861" duration="6214000" />
+      <workItem from="1583759116076" duration="140000" />
     </task>
     <servers />
   </component>
@@ -305,47 +308,57 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="301" y="125" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1583668963962" />
-    <state x="436" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583667473256">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="677" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583747684466">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="436" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583667473256" />
+    <state x="677" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583747684466" />
     <state x="556" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583317546354" />
     <state x="556" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583317546354" />
     <state x="439" y="221" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1583668950380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="439" y="221" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583668950380" />
-    <state x="474" y="173" key="FileChooserDialogImpl" timestamp="1583667880070">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="593" y="218" key="FileChooserDialogImpl" timestamp="1583742842089">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="474" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583667880070" />
+    <state x="593" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583742842089" />
     <state x="624" y="312" key="Github.ShareDialog" timestamp="1583317546354" />
     <state x="624" y="312" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1583317546354" />
-    <state width="1478" height="189" key="GridCell.Tab.0.bottom" timestamp="1583740222701">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1583754172189">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1478" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583740222701" />
-    <state width="1478" height="189" key="GridCell.Tab.0.center" timestamp="1583740222701">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583754172189" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1583754172189">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1478" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583740222701" />
-    <state width="1478" height="189" key="GridCell.Tab.0.left" timestamp="1583740222701">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583754172189" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1583754172188">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1478" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583740222701" />
-    <state width="1478" height="189" key="GridCell.Tab.0.right" timestamp="1583740222701">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583754172188" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1583754172189">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1478" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583740222701" />
-    <state x="171" y="78" width="1257" height="707" key="SettingsEditor" timestamp="1583667683085">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583754172189" />
+    <state x="461" y="162" width="1257" height="707" key="SettingsEditor" timestamp="1583742848676">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="171" y="78" width="1257" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583667683085" />
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583317559278" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583742848676" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583317619800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583317619800" />
+    <state x="818" y="233" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1583747621967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="818" y="233" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583747621967" />
     <state x="659" y="311" key="git4idea.merge.GitPullDialog" timestamp="1583317569333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
