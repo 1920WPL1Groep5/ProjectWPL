@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 // Maes Bart
 public class Familie {
     private Integer familie_id;

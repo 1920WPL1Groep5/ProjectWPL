@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 // Maes Bart
 public class Extra {
     private Integer extra_id;

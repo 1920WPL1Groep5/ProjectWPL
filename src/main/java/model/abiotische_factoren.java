@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 // Maes Bart
 public class abiotische_factoren {
     private Integer abiotische_id;

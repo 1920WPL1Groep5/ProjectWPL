@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 public class Type {
     public Type(int type_id, String type_naam) {

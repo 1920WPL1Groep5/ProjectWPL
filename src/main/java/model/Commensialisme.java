@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 // Maes Bart
 public class Commensialisme {
     private Integer commensialisme_id;

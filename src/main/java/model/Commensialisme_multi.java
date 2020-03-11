@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 public class Commensialisme_multi {
     private Integer commensialisme_id;
