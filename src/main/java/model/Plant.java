@@ -1,4 +1,4 @@
-package main.java.model;
+package model;
 
 // Vancoillie Matthias (lijn 4 tot 120)
 public class Plant {
