@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre11.xml" afterDir="false" />
@@ -12,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaPlantenProject/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/module-info.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-=======
       <change afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/UitlegDBconnectieAanpassen" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/JavaPlantenProject/main/resources/UitlegDBconnectieAanpassen" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -25,8 +23,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/PlantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PlantDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/UitlegDBconnectieAanpassen" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UitlegDBconnectieAanpassen" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" />
->>>>>>> Jasper_branch
     </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -292,6 +290,7 @@
       <workItem from="1583317535084" duration="24000" />
       <workItem from="1583740901861" duration="6214000" />
       <workItem from="1583759116076" duration="140000" />
+      <workItem from="1583920744019" duration="246000" />
     </task>
     <servers />
   </component>
