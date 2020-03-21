@@ -1,6 +1,8 @@
 package main.java.control;
 
 // dao's en model class
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Spinner;
 import main.java.dao.Database;
 import main.java.dao.PlantDao;
 import main.java.model.Plant;
@@ -16,8 +18,15 @@ import javafx.scene.input.MouseEvent;
 import javax.swing.*;
 
 public class Controller {
+    public ComboBox cmbType;
     public TextField txtFamilie;
-    public TextArea txtPlantenFamilie;
+    public TextField txtGeslacht;
+    public TextField txtSoort;
+    public TextField txtCultivar;
+    public Spinner SpinnerBlad;
+    public Spinner SpinnerBloei;
+
+    public TextArea txtResultaat;
 
     private Connection dbConnection;
 
@@ -34,7 +43,7 @@ public class Controller {
     // Jasper: aanmaak
     public void zoekFamilie(MouseEvent mouseEvent){
         try{
-            txtPlantenFamilie.clear();
+            txtResultaat.clear();
             // input GUI: gedeelte van naam familie is voldoende
             String familie = txtFamilie.getText();
             // dao aanmaken met huidige dbConnectie
@@ -45,14 +54,57 @@ public class Controller {
             if(!familieleden.isEmpty()){
                 for (Plant familielid : familieleden)
                 {
-                    txtPlantenFamilie.setText(txtPlantenFamilie.getText() + familielid.getFgsv() + "\r\n");
+                    txtResultaat.setText(txtResultaat.getText() + familielid.getFgsv() + "\r\n");
                 }
             } else {
                 JOptionPane.showMessageDialog(null,"Geen planten voor deze familie gevonden");
             }
         } catch (SQLException e)
         {
-            txtPlantenFamilie.setText(e.getMessage());
+            txtResultaat.setText(e.getMessage());
+        }
+    }
+
+    public void clicked_Zoeken(MouseEvent mouseEvent){
+        try{
+            // dao aanmaken met huidige dbConnectie
+            PlantDao plantDao = new PlantDao(dbConnection);
+            // eigenschap om op te zoeken en zoekterm voor deze eigenschap
+            String sEigenschap = "", sZoekterm = "";
+
+            //        TODO : foutafhandeling: geen enkele van de vier txtFields ingevuld
+                if (!txtFamilie.getText().equals("")) {
+                    sEigenschap = "familie";
+                    sZoekterm = txtFamilie.getText();
+                }
+                else if (!txtGeslacht.getText().equals("")) {
+                    sEigenschap = "geslacht";
+                    sZoekterm = txtGeslacht.getText();
+                }
+                else if (!txtSoort.getText().equals("")) {
+                    sEigenschap = "soort";
+                    sZoekterm = txtSoort.getText();
+                }
+                else if (!txtCultivar.getText().equals("")) {
+                    sEigenschap = "variatie"; // benaming cultivar in database
+                    sZoekterm = txtCultivar.getText();
+                }
+
+                txtResultaat.clear();
+
+            List<Plant> plantList = plantDao.getPlantByStringProperty(sEigenschap,sZoekterm);
+            
+            if(!plantList.isEmpty()){
+                for (Plant plant : plantList)
+                {
+                    txtResultaat.setText(txtResultaat.getText() + plant.getFgsv() + "\r\n");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null,"Geen planten voor deze eigenschap gevonden");
+            }
+        }
+        catch (SQLException e) {
+            txtResultaat.setText(e.getMessage());
         }
     }
 }

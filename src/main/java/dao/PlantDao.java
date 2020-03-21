@@ -16,21 +16,26 @@ public class PlantDao {
             "SELECT * FROM student WHERE plant_id = ?";
     private static final String GETPLANTBYTYPE =
             "SELECT * FROM plant WHERE type LIKE ?";
-    // getPlantByFamilie : Jasper
+    // Jasper: ophalen plant op basis van familie
     private static final String GETPLANTBYFAMILIE =
             "SELECT * FROM plant WHERE familie LIKE ?";
+    // Jasper: Ophalen plant op basis van String Eigenschap
+    private static final String GETPLANTBYSTRINGPROPERTY =
+            "SELECT * FROM plant WHERE ? LIKE ?";
 
     private Connection dbConnection;
 
     private PreparedStatement stmtSelectPlantById;
     private PreparedStatement stmtSelectPlantByType;
     private PreparedStatement stmtSelectPlantByFamilie;
+    private PreparedStatement stmtSelectPlantByStringProperty;
 
-    public PlantDao(Connection dbConnection) throws SQLException {   // PlantDao is niet actief ?
+    public PlantDao(Connection dbConnection) throws SQLException {
         this.dbConnection = dbConnection;
         stmtSelectPlantById = dbConnection.prepareStatement(GETPLANTBYID);
         stmtSelectPlantByType = dbConnection.prepareStatement(GETPLANTBYTYPE);
         stmtSelectPlantByFamilie = dbConnection.prepareStatement(GETPLANTBYFAMILIE);
+        stmtSelectPlantByStringProperty = dbConnection.prepareStatement(GETPLANTBYSTRINGPROPERTY);
     }
 
     public List<Plant> getAllPlanten() {
@@ -131,4 +136,28 @@ public class PlantDao {
         return PlantList;
     }
 
+    public List<Plant> getPlantByStringProperty(String sProperty, String sSearch) throws SQLException {
+        List<Plant> PlantList = new ArrayList<>();
+
+        stmtSelectPlantByStringProperty.setString(1, sProperty);
+        stmtSelectPlantByStringProperty.setString(2, "%" + sSearch + "%");
+        ResultSet rs = stmtSelectPlantByStringProperty.executeQuery();
+
+        while (rs.next()) {
+            Plant plant =
+                    new Plant(
+                            rs.getInt("plant_id"),
+                            rs.getString("type"),
+                            rs.getString("familie"),
+                            rs.getString("geslacht"),
+                            rs.getString("soort"),
+                            rs.getString("variatie"),
+                            rs.getInt("plantdichtheid_min"),
+                            rs.getInt("plantdichtheid_max"),
+                            rs.getString("fgsv")
+                    );
+            PlantList.add(plant);
+        }
+        return PlantList;
+    }
 }

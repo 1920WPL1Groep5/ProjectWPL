@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("GUI_Zoek.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ZoekScherm_GUI.fxml"));
         primaryStage.setTitle("Planten Database");
         primaryStage.setScene(new Scene(root, 600, 600));
         primaryStage.show();
